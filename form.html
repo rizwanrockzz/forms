@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <title>HTML forms</title>
+    <style>
+        h1{
+            font-weight: 500;
+        }
+        body {
+            padding: 0 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+        fieldset{
+            padding: 20px;
+            background-color: aquamarine;
+            margin-bottom: 150px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>RIZWAN FORMS</h1>
+    </center>
+    <form action="https://formsubmit.co/208w1a1299@gmail.com" method="POST">
+        <fieldset>
+            <!-- <legend>Rizwan Forms</legend> -->
+            <label for="fname">First name : &nbsp;</label>
+            <input type="text" id="fname" name="fname" required/><br /><br>
+            <label for="lname">Last name : &nbsp;</label>
+            <input type="text" id="lname" name="lname" /><br /><br />
+            <label for="gender">Gender : </label>
+            <input type="radio" id="male" name="gender" required/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" />
+            <label for="female">Female</label><br /><br>
+            <label for="address">Address : &nbsp;</label>
+            <textarea name="address" rows="4" cols="30"></textarea>
+            <br><br><br>
+            <label for="dept">Department : </label>
+            <select id="branch" name="branch">
+                <option value="option">--Select an option--</option>
+                <option value="cse">CSE</option>
+                <option value="it">IT</option>
+                <option value="ece">ECE</option>
+                <option value="eie">EIE</option>
+                <option value="civil">Civil</option>
+                <option value="mech">Mech</option>
+            </select><br>
+            <br>
+            <br>
+            <br>
+            <!-- <input type="color"><br><br> -->
+            <label for="date">Date : </label>
+            <input type="date"><br><br>
+            <input type="email"><br><br>
+            <input type="file"><br><br>
+            <!-- <label for="hidden">Hidden : </label>
+                <input type="hidden"><br><br> -->
+            <label for="image">image</label>
+            <input type="image"><br><br>
+            <label for="">number : </label>
+            <input type="number"><br><br>
+            <label for="">pass : </label>
+            <input type="password"><br><br>
+            <!-- <input type="range"><br><br> -->
+            <label for="">search : </label>
+            <input type="search"><br><br>
+            <label for="">tel : </label>
+            <input type="tel"><br><br>
+            <label for="">text : </label>
+            <input type="text"><br><br>
+            <label for="">url : </label>
+            <input type="url"><br><br><br><br>
+            <label for="hobbies">Hobbies : </label><br><br>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label><br><br>
+            <br>
+            <br>
+            <br>
+            <label for="button">button</label>
+            <input type="button" value="Just Button"><br><br><br><br>
+            <input type="submit" value="Proceed" />
+            <input type="reset"><br><br>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
