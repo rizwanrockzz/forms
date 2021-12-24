@@ -24,6 +24,11 @@
             margin-bottom: 150px;
             border: none;
         }
+        .resume{
+        	font-size:12px;
+            color:red;
+        }
+        
     </style>
 </head>
 
@@ -35,9 +40,9 @@
         <fieldset>
             <!-- <legend>Rizwan Forms</legend> -->
             <label for="firstname">First name &ensp;&nbsp;&emsp;&ensp;: &nbsp;</label>
-            <input type="text" id="fname" name="fname" placeholder="John" required/><br /><br>
+            <input type="text" id="fname" name="firstname" placeholder="John" required/><br /><br>
             <label for="lastname">Last name &ensp;&nbsp;&emsp;&ensp;: &nbsp;</label>
-            <input type="text" id="lname" name="lname" placeholder="Doe" required/><br /><br />
+            <input type="text" id="lname" name="lastname" placeholder="Doe" required/><br /><br />
             <label for="gender">Gender &ensp;&nbsp;&emsp;&emsp;&ensp;&ensp;: &nbsp;</label>
             <input type="radio" id="male" name="gender" required/>
             <label for="male">Male</label>
@@ -61,40 +66,36 @@
             <br>
             <!-- <input type="color"><br><br> -->
             <label for="date">Date &emsp;&emsp;&emsp;&ensp;&nbsp;&emsp;:&nbsp;&nbsp; </label>
-            <input type="date"><br><br>
+            <input type="date" name="date"><br><br>
             <label for="date">Email &emsp;&emsp;&emsp;&nbsp;&emsp;:&nbsp;&nbsp;</label>
-            <input type="email" placeholder="abc@email.com" required><br><br>
-            <!-- <input type="file"><br><br> -->
+            <input type="email" name="email" placeholder="abc@email.com" required><br><br>
+            
             <!-- <label for="hidden">Hidden : </label>
                 <input type="hidden"><br><br> -->
             <!-- <label for="image">image</label> -->
             <!-- <input type="image"><br><br> -->
-            <label for="">Phone Number : &nbsp;</label>
-            <input type="number" placeholder="9112234567" required><br><br>
-            <label for="">Password &emsp;&emsp;&nbsp;: &nbsp;</label>
-            <input type="password" required><br><br>
-            <!-- <input type="range"><br><br> -->
-            <!-- <label for="">search : </label>
-            <input type="search"><br><br> -->
-            <!-- <label for="">tel : </label>
-            <input type="tel"><br><br>
-            <label for="">text : </label>
-            <input type="text"><br><br> -->
+            <label for="phone-no">Phone Number : &nbsp;</label>
+            <input type="number" name="phone-no" placeholder="9112234567" required><br><br>
+            <label for="password">Password &emsp;&emsp;&nbsp;: &nbsp;</label>
+            <input type="password" name="password" required><br><br>
+
             <label for="">URL&emsp;&emsp;&emsp;&emsp;&emsp;: &nbsp;</label>
-            <input type="url" placeholder="https://www.domain.com/"><br><br>
+            <input type="url" name="url" placeholder="https://www.domain.com/"><br><br>
             <label for="hobbies">Hobbies &emsp;&emsp;&emsp;:&nbsp; </label>
             <input type="checkbox" id="singing" name="singing" value="dancing">
-            <label for="vehicle1">Singing</label>&ensp;
+            <label for="singing">Singing</label>&ensp;
             <input type="checkbox" id="dancing" name="dancing" value="dancing">
-            <label for="vehicle2">Dancing</label>&ensp;
+            <label for="dancing">Dancing</label>&ensp;
             <input type="checkbox" id="photography" name="photography" value="photography">
-            <label for="vehicle3">Photography</label>&ensp;
+            <label for="photography">Photography</label>&ensp;
             <input type="checkbox" id="travelling" name="travelling" value="travelling">
-            <label for="vehicle2">Travelling</label>&ensp;
+            <label for="travelling">Travelling</label>&ensp;
             <input type="checkbox" id="reading" name="reading" value="reading">
-            <label for="vehicle3">Reading</label><br><br>
+            <label for="reading">Reading</label><br>
             <br>
             <br>
+            <label for="resume">Resume&emsp;&emsp;&emsp;&nbsp;:&nbsp;&nbsp;</label>
+            <input type="file"><p class="resume">*upload your resume</p>
             <br>
             <!-- <label for="button">button</label>
             <input type="button" value="Just Button"><br><br><br><br> -->
