@@ -36,10 +36,13 @@
         .center{
         	text-align:center;
             font-size:15px;
-         }
-           
-    
-        
+         }    
+         
+		form{
+        	width:600px;
+        	margin-left:auto;
+            margin-right:auto;
+        }
     </style>
 </head>
 
@@ -47,7 +50,11 @@
     <center>
         <h1>RIZWAN FORMS</h1>
     </center>
-    <form action="https://formsubmit.co/f9f06ddba3d01e64fae7118d678531a0" enctype="multipart/form-data" method="POST">
+    <!--
+    <div class="whole">
+    <div class="form">
+    -->
+    	<form action="https://formsubmit.co/f9f06ddba3d01e64fae7118d678531a0" enctype="multipart/form-data" method="POST">
         <fieldset>
             <!-- <legend>Rizwan Forms</legend> -->
             <label for="firstname">First name &ensp;&nbsp;&emsp;&ensp;: &nbsp;</label>
@@ -64,7 +71,7 @@
             <br><br><br>
             <label for="dept">Department &ensp;&emsp;:&nbsp;&nbsp;</label>
             <select id="branch" name="branch">
-                <option value="option">---Select an option---</option>
+                <option value="option">--- Select an option ---</option>
                 <option value="cse">CSE</option>
                 <option value="it">IT</option>
                 <option value="ece">ECE</option>
@@ -109,15 +116,15 @@
             
             <label for="hobbies">Hobbies &emsp;&emsp;&emsp;:&nbsp; </label>
             <input type="checkbox" id="singing" name="singing" value="dancing">
-            <label for="singing">Singing</label>&ensp;
+            <label for="singing">Singing</label>&ensp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
             <input type="checkbox" id="dancing" name="dancing" value="dancing">
-            <label for="dancing">Dancing</label>&ensp;
+            <label for="dancing">Dancing</label>&ensp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
             <input type="checkbox" id="photography" name="photography" value="photography">
-            <label for="photography">Photography</label>&ensp;
+            <label for="photography">Photography</label>&ensp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
             <input type="checkbox" id="travelling" name="travelling" value="travelling">
-            <label for="travelling">Travelling</label>&ensp;
+            <label for="travelling">Travelling</label>&ensp;<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
             <input type="checkbox" id="reading" name="reading" value="reading">
-            <label for="reading">Reading</label><br>
+            <label for="reading">Reading</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
             <br>
             <br>
             <label for="resume">Image&emsp;&emsp;&emsp;&emsp;&nbsp;:&nbsp;&nbsp;</label>
@@ -126,6 +133,8 @@
             <label for="resume">Video&emsp;&emsp;&emsp;&emsp;&nbsp;:&nbsp;&nbsp;</label>
             <input type="file" name="attachment" accept="image/png, image/jpeg"><p class="resume">*upload your intro video</p>
             <br>
+            
+            <p>Academic Details</p>
             <!-- <label for="button">button</label>
             <input type="button" value="Just Button"><br><br><br><br> -->
             <input type="reset">&emsp;&emsp;&emsp;&emsp;
@@ -138,6 +147,10 @@
         </fieldset>
 
     </form>
+    <!--
+    </div>
+    </div>
+    -->
     <script>
 		function myFunction() {
   			alert("Thank you for filling the form your details are stored");
